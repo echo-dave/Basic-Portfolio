@@ -1,0 +1,71 @@
+/* be sure to include a font link if using external fonts ie:
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> */
+
+/* check the caption styles if needed */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+   }
+   
+   h1, h2, h3, h4, h5, h6 {
+    font-weight:bold;
+   }
+   
+   header h1 {
+       font-size: 2.6em;
+       font-weight: bolder;
+       text-transform: capitalize;
+   }
+   h1 {
+    font-size: 2.2em;
+   }
+   
+   h2 {
+    font-size: 1.85em;
+   }
+   
+   h3 {
+    font-size: 1.60em;
+   }
+   h4 {
+    font-size: 1.50em;
+   }
+   
+   h5 {
+    font-size: 1.40em;
+   }
+   
+   h6 {
+    font-size: 1.25em;
+   }
+   
+   .large {
+       font-size: 150%;
+   }
+
+   .small {
+       font-size: 75%;
+       font-weight: 100;
+       opacity: .65;
+       text-transform: lowercase;
+   }
+
+   .caption {
+       text-align: center;
+       margin: -3em auto 3em auto;
+       font-size:.85em;
+       font-weight: 600;
+       background-color: rgba(240, 255, 255, .15);
+       z-index: 10;
+       position:relative;
+       width: 87%;
+       padding-bottom: .25em;
+   }
+   .main-nav, footer {
+    font-size: 0.85em;
+   }
+   
+   .fine-print {
+    font-size: 0.6em;
+   }
