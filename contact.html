@@ -7,34 +7,45 @@
     <link rel="stylesheet" type="text/css" href="assets/css/typography.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
+    <title>Dave's Portfolio</title>
 </head>
 <body>
-<header>
-    <h1 class="title">Dave May</h1>
-</header>
 
-<nav>
-    <ul>
-        <li>About</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
-    </ul>
-</nav>
+    <header>
+        <div class="headerWrap">
 
+            <h1 class="title">Dave May</h1>
 
-<section>
+            <nav>
+                <ul>
+                    <li>About</li>
+                    <li>Portfolio</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+    <div class="contentWrapper">
+
+<section class="clearfix">
     <h2>Contact</h2>
-    <form action="#">
+    <form class="contactForm" action="#">
         <p>Name</p>
-        <input type="text" autofocus required name="Name">
+        <input id="name" type="text" autofocus required name="Name" value="John Smith">
         <p>Email</p>
-        <input type="email" required name="Email">
+        <input id="email" type="email" required name="Email" value="example@gmail.com">
         <p>Message</p>
-        <textarea required></textarea>
-        <input type="submit">
+        <textarea id="message" required></textarea>
+        <input type="submit" id="submit">
     </form>
 </section>
+  
+</div>
+
+<footer>
+        <p class="copyright">© Dave May</p>
+</footer>
 
 </body>
 </html>
