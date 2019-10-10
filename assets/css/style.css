@@ -26,7 +26,7 @@ h1.title {
     display: inline;
     padding: .3em .5em; 
     position: relative;
-    top:.2em;
+    top:.35em;
 }
 
 nav {
@@ -77,6 +77,10 @@ section {
 
 }
 
+.content {
+    margin-top: 2.4em;
+}
+
  h2 {
     position: relative;
     margin-bottom: 1em;
@@ -107,6 +111,9 @@ footer {
     border-top-color: #4aaaa5;
     border-top-style: solid;
     border-top-width: .4em;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: -1px;
 }
 
 .copyright {
