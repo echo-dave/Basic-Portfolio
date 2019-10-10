@@ -136,3 +136,35 @@ footer {
       border: none;
       padding: .8em 2em;
   }
+
+  .imgThumb {
+      float:left;
+      margin-right: 2em;
+      margin-bottom: 2em;
+      position: relative;
+      
+  }
+
+  .imgThumb:hover {
+      border-style: solid;
+      border-width: .3em;
+      border-color: #4aaaa5;
+      text-decoration: none;
+      max-block-size: 
+  }
+
+  .imgThumb p {
+    background-color: #4aaaa5;
+    text-align: center;
+    color: #fff;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .galleryLink {
+      text-decoration: none;
+  }
