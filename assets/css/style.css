@@ -16,7 +16,6 @@ header{
     height: 4.5em;
     max-width: 68.57em;
     margin: 0 auto;
-
 }
 
 h1.title {
@@ -142,7 +141,10 @@ footer {
       margin-right: 2em;
       margin-bottom: 2em;
       position: relative;
-      
+      height: 200px;
+      width: 310px;
+      box-sizing: border-box;
+      overflow: hidden;
   }
 
   .imgThumb:hover {
@@ -150,7 +152,12 @@ footer {
       border-width: .3em;
       border-color: #4aaaa5;
       text-decoration: none;
-      max-block-size: 
+  }
+
+  .imgThumb:hover img {
+      position: relative;
+      top: -.3em;
+      left: -.3em;
   }
 
   .imgThumb p {
@@ -164,6 +171,16 @@ footer {
     text-align: center;
     width: 100%;
   }
+
+  .imgThumb:hover p {
+      bottom: -.3em;
+  }
+
+  .imgThumb img {
+      display: block;
+  }
+
+  
 
   .galleryLink {
       text-decoration: none;
