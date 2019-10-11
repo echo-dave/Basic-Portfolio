@@ -12,6 +12,7 @@
         border: solid .2em rgb(116, 116, 116);
         display: block;
         z-index: 90;
+        background-color: #fff;
     }
 
     .menu > div {
