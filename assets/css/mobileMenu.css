@@ -1,0 +1,69 @@
+@media only screen and (max-width:4in) {
+   .mobileMenuContainer{
+        position: fixed;
+        top: .5em;
+        right: .5em;
+        display: block;
+   }
+    .menu  {
+        width: 3em;
+        height: 3em;
+        border-radius: .5em;
+        border: solid .2em rgb(116, 116, 116);
+        display: block;
+        z-index: 90;
+    }
+
+    .menu > div {
+        width:80%;
+        margin: .45em auto 0;
+        height: .4em;
+        background-color: #4aaaa5;
+        display: block;
+    }
+    ul.dropDown {
+        list-style: none;
+        display: none;
+        border: solid rgb(131, 131, 131);
+        border-radius: .5em 0 .5em .5em;
+    }
+
+    ul.dropDown > li {
+        margin-top: 1em;
+        font-size: 1.5em;
+    }
+    ul.dropDown > li:last-of-type {
+        margin-bottom: 1em;
+    }
+
+    ul.dropDown a {
+        text-decoration: none;
+        color: #777777;
+    } 
+    
+    input[type=checkbox] {
+        visibility: hidden;
+    }
+    input[type=checkbox]:checked ~ ul {
+        display:block;
+        position: absolute;
+        top: 3.15em;
+        right: 0em;
+        width:8em;
+        text-align: center;
+        background-color: #fff;
+        animation-name: fade;
+        animation-duration: .5s;
+        animation-timing-function: linear;
+    }
+    @keyframes fade {
+        0% {opacity: 0;}
+        100% {opacity: .8;}
+    }
+
+
+    nav {
+        display: none;
+    }
+}
+

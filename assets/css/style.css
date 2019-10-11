@@ -99,8 +99,9 @@ section h2::after {
 
 .portrait {
     float: left;
-    padding-right: 1.5em;
+    padding:0 1.5em 1em 0;
     margin-top: .5em;
+    max-width: 100%;
 }
 
 footer {
@@ -119,7 +120,8 @@ footer {
 .copyright {
     color: #fff;
     text-align: center;
-
+    position: relative;
+    top:.5em;
 }
 
 .clearfix::after {
@@ -203,4 +205,13 @@ footer {
 
   .galleryLink {
       text-decoration: none;
+  }
+
+  .mobileMenuContainer {display: none;}
+
+  @media only screen and (max-width:4in) {
+    .imgThumb {
+        width: 100%;
+        height: auto;
+    }
   }
