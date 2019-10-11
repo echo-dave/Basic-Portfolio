@@ -10,7 +10,7 @@ header{
 }
 .contentWrapper {
     max-width: 68.57em;
-    margin: 0 auto;
+    margin: 0 auto 6em;
     padding: 0 2.5em;
 }
 .headerWrap {
