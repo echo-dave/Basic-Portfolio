@@ -132,7 +132,7 @@ footer {
   }
 
   .contactForm {
-
+    margin-right: 1em;
   }
 
   #name, #email, #message {
@@ -211,7 +211,7 @@ footer {
 
   @media only screen and (max-width:4in) {
     .imgThumb {
-        width: 100%
+        width: 100%;
     }
     img.imgThumb {
         width: 100%;
