@@ -25,16 +25,19 @@
     ul.dropDown {
         list-style: none;
         display: none;
-        border: solid rgb(131, 131, 131);
+        border: solid #838383;
         border-radius: .5em 0 .5em .5em;
+        opacity:0;
     }
 
     ul.dropDown > li {
-        margin-top: 1em;
+        padding: .5em 0;
         font-size: 1.5em;
+        border-bottom:.1em solid #838383;
     }
     ul.dropDown > li:last-of-type {
-        margin-bottom: 1em;
+        /*margin-bottom: 1em;*/
+        border:none;
     }
 
     ul.dropDown a {
@@ -50,17 +53,20 @@
         position: absolute;
         top: 3.15em;
         right: 0em;
-        width:8em;
+        /*width:8em;*/
+        padding: 0 1.5em;
         text-align: center;
         background-color: #fff;
-        animation-name: fade;
+        transition: opacity 0.5s linear;
+        opacity: .9;
+/*        animation-name: fade;
         animation-duration: .5s;
-        animation-timing-function: linear;
+        animation-timing-function: linear;*/
     }
-    @keyframes fade {
+    /*@keyframes fade {
         0% {opacity: 0;}
         100% {opacity: .8;}
-    }
+    }*/
 
 
     nav {
