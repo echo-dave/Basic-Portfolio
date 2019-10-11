@@ -211,6 +211,9 @@ footer {
 
   @media only screen and (max-width:4in) {
     .imgThumb {
+        width: 100%
+    }
+    img.imgThumb {
         width: 100%;
         height: auto;
     }
