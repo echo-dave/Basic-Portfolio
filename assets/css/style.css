@@ -1,4 +1,4 @@
-body {background-color:#eee; margin: 0; padding: 0; font-size: 14px; color: #777777;}
+body {background-color:#eee; margin: 0; padding: 0; font-size: 14px; color: #777777; min-height: 100vh;}
 
 header{
     width:100%;
@@ -112,9 +112,9 @@ footer {
     border-top-color: #4aaaa5;
     border-top-style: solid;
     border-top-width: .4em;
-    position: sticky;
-    position: -webkit-sticky;
-    bottom: -1px;
+    position: fixed;
+    bottom: 0;
+    z-index: 80;
 }
 
 .copyright {
