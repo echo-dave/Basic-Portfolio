@@ -1,24 +1,27 @@
-@media only screen and (max-width:4in) {
+@media only screen and (max-width:4.5in) {
    .mobileMenuContainer{
-        position: fixed;
-        top: .5em;
-        right: .5em;
-        display: block;
-   }
-    .menu  {
-        width: 3em;
-        height: 3em;
-        border-radius: .5em;
-        border: solid .2em rgb(116, 116, 116);
+        /*position: fixed;
+        top: .5rem;
+        right: .5rem;*/
+        position: absolute;
+        top:.35rem;
+        right:.35rem;
         display: block;
         z-index: 90;
+   }
+    .menu  {
+        width: 3rem;
+        height: 3rem;
+        border-radius: .5rem;
+        border: solid .2rem rgb(116, 116, 116);
+        display: block;
         background-color: #fff;
     }
 
     .menu > div {
         width:80%;
-        margin: .45em auto 0;
-        height: .4em;
+        margin: .45rem auto 0;
+        height: .4rem;
         background-color: #4aaaa5;
         display: block;
     }
@@ -36,7 +39,6 @@
         border-bottom:.1em solid #838383;
     }
     ul.dropDown > li:last-of-type {
-        /*margin-bottom: 1em;*/
         border:none;
     }
 
@@ -51,10 +53,9 @@
     input[type=checkbox]:checked ~ ul {
         display:block;
         position: absolute;
-        top: 3.15em;
-        right: 0em;
-        /*width:8em;*/
-        padding: 0 1.5em;
+        top: 3.15rem;
+        right: 0rem;
+        padding: 0 1.5rem;
         text-align: center;
         background-color: #fff;
         transition: opacity 0.5s linear;

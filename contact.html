@@ -19,14 +19,31 @@
 
             <h1 class="title">Dave May</h1>
 
-            <nav>
+            <nav class="hMenu">
                 <ul>
-                    <li><a href="index.html">About</a></li>
+                    <li class="currentPage">About</li>
                     <li><a href="porfolio.html">Portfolio</a></li>
-                    <li class="currentPage">Contact</li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
+
+        <nav class="mobileMenuContainer">
+            <label for="mobileMenu">
+                <div class="menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </label>
+            <input type="checkbox" id="mobileMenu"/>
+            <ul class="dropDown">
+                <li class="currentPage">About</li>
+                <li><a href="porfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>    
+    
     </header>
    
     <div class="contentWrapper">
@@ -50,21 +67,7 @@
         <p class="copyright">© Dave May</p>
 </footer>
 
-<div class="mobileMenuContainer">
-        <label for="mobileMenu">
-            <div class="menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </label>
-        <input type="checkbox" id="mobileMenu"/>
-        <ul class="dropDown">
-            <li><a href="index.html">About</a></li>
-            <li><a href="porfolio.html">Portfolio</a></li>
-            <li class="currentPage">Contact</li>
-        </ul>
-    </div>
+
 
 </body>
 </html>
