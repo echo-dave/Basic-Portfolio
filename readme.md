@@ -1,2 +1,9 @@
-# This is a basic 3 page portfolio activity utilising basic html and css.
-I started things off with simply working out the desktop based paramaters and then moved to mobilize. Primarily all that was necessary for mobilizing was working up a mobile friendly menu and using some media query to toggle based on screen size. The initial site was designed using relative values with the intent of being reactive / mobile friendly in the end.
+# Basic 3 page Portfolio Activity
+## HTML and CSS
+* Started it off with basic html structure
+* Worked up basic CSS layout
+* Styled per specifications
+* Debbuged the image gallery of portfolio page
+* Mobile menu
+* Restyled mobile menu
+* Cleaned up some CSS which resulted in additional debugging
