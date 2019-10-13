@@ -28,15 +28,15 @@
     ul.dropDown {
         list-style: none;
         display: none;
-        border: solid #838383;
+        border: solid rgba(131, 131, 131,0);
         border-radius: .5em 0 .5em .5em;
-        opacity:0;
-    }
+        background-color:rgba(255, 255, 255, 0);    }
 
     ul.dropDown > li {
         padding: .5em 0;
         font-size: 1.5em;
         border-bottom:.1em solid #838383;
+        opacity:0;
     }
     ul.dropDown > li:last-of-type {
         border:none;
@@ -50,6 +50,15 @@
     input[type=checkbox] {
         visibility: hidden;
     }
+    
+    @keyframes ulMenuFade {
+        0% {background-color:rgba(255, 255, 255, 0);border: solid rgba(131, 131, 131,0);
+        }
+        100% {background-color:rgba(255, 255, 255, 0.75);border: solid rgba(131, 131, 131,1);
+        }
+
+   }
+    
     input[type=checkbox]:checked ~ ul {
         display:block;
         position: absolute;
@@ -57,17 +66,26 @@
         right: 0rem;
         padding: 0 1.5rem;
         text-align: center;
-        background-color: #fff;
-        transition: opacity 0.5s linear;
-        opacity: .9;
-/*        animation-name: fade;
-        animation-duration: .5s;
-        animation-timing-function: linear;*/
+        animation-name: ulMenuFade;
+        animation-duration: .25s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
     }
-    /*@keyframes fade {
-        0% {opacity: 0;}
-        100% {opacity: .8;}
-    }*/
+   
+    @keyframes listElementsFade {
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+    
+    input[type=checkbox]:checked ~ ul > li {
+        animation-name: listElementsFade;
+        animation-duration: .25s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: .12s;        
+    }
+  
+  
 
 
     nav {

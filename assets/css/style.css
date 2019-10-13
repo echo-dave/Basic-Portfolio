@@ -115,9 +115,11 @@ footer {
     border-top-color: #4aaaa5;
     border-top-style: solid;
     border-top-width: .4em;
+/*  fixed / glued to bottom of browser window*/
     position: fixed;
     bottom: 0;
     z-index: 80;
+
 }
 
 .copyright {
