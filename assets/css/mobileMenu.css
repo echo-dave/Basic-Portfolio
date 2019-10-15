@@ -1,4 +1,4 @@
-@media only screen and (max-width:4.5in) {
+@media only screen and (max-width:4.5in), screen and ( max-width:545px) {
    .mobileMenuContainer{
         /*position: fixed;
         top: .5rem;

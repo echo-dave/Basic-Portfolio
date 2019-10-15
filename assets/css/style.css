@@ -222,7 +222,7 @@ margin-right: .5em;
 
 .mobileMenuContainer {display: none;}
 
-  @media only screen and (max-width:4.5in) {
+  @media only screen and (max-width:4.5in), screen and ( max-width:545px){
     .imgThumb {
         width: 100%;
         height:auto;
